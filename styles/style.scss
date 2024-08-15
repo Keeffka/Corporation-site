@@ -320,7 +320,7 @@ header,
 }
 
 .features-section {
-  padding-top: 150px;
+  padding-top: 40px;
 }
 
 .services-overview {
@@ -514,9 +514,9 @@ footer nav {
 }
 
 .project-item {
-  max-width: 630px;
+  max-width: 500px;
   img {
-    max-width: 630px;
+    max-width: 500px;
     min-height: 300px;
   }
 }
@@ -549,6 +549,9 @@ footer nav {
   padding: 20px;
   h3 {
     font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 25px;
   }
   p {
     margin-top: 15px;
@@ -573,7 +576,7 @@ footer nav {
   position: relative;
   img {
     max-width: 370px;
-    filter: brightness(.6);
+    filter: brightness(.75);
   }
 }
 
@@ -805,6 +808,21 @@ footer nav {
   }
 }
 
+.content {
+  img {
+    margin-top: 30px;
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+  }
+  h4 {
+    font-weight: bold;
+  }
+  p,h4 {
+    margin-top: 0px;
+  }
+}
+
 @media screen and (max-width: 1450px) {
   .projects {
     grid-template-columns: 1fr;
@@ -1018,6 +1036,12 @@ footer nav {
     gap: 15vw;
   }
 
+  .pagination {
+    a, h3 {
+      font-size: 17px;
+    }
+  }
+  
   .contacts-main {
     padding: 60px 30px 30px 30px;
   }
