@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./node_modules/photoswipe/dist/photoswipe.css">
 </head>
 <body>
     <div class="wrapper">
@@ -96,9 +97,24 @@
             </ul>
          </div> -->
          <div class="projects-container">
+          <!-- <div  class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started"> -->
             <ul class="projects">
-                <li class="project-item">
-                    <img src="/img/тест.jpg" alt="">
+                <li class="project-item" id="gallery--getting-started">
+                  <a href="./img/тест.jpg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./img/тест.jpg" alt="" />
+                  </a>
+                  <a href="./img/тест_2.jpg"
+                    style="display: none;" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./img/тест_2.jpg" alt="" />
+                  </a>
+
+
                     <div class="project-info">
                         <div class="project-info-text">
                             <h3>дозвіл на виконання робіт підвищеної небезпеки</h3>
@@ -106,8 +122,13 @@
                         </div>
                     </div>
                 </li>
-                <li class="project-item">
-                  <img src="/img/Політика_в_сфері_якості.jpg" alt="">
+                <li class="project-item" id="gallery--getting-started">
+                  <a href="./img/Політика_в_сфері_якості.jpg" 
+                  data-pswp-width="1669" 
+                  data-pswp-height="2500" 
+                 >
+                  <img src="./img/Політика_в_сфері_якості.jpg" alt="" />
+                </a>
                   <div class="project-info">
                       <div class="project-info-text">
                           <h3>Політика в сфері якості</h3>
@@ -115,16 +136,27 @@
                       </div>
                   </div>
               </li>
-                <li class="project-item">
-                    <img src="/img/Декларація_щодо_неупередженості_та_незалежності.jpg" alt="">
+                <li class="project-item" id="gallery--getting-started">
+                  <a href="./img/Декларація_щодо_неупередженості_та_незалежності.jpg" 
+                  data-pswp-width="1669" 
+                  data-pswp-height="2500" 
+                 >
+                  <img src="./img/Декларація_щодо_неупередженості_та_незалежності.jpg" alt="" />
+                </a>
                     <div class="project-info">
                         <div class="project-info-text">
                             <h3>Декларація щодо неупередженості та незалежності</h3>
                             <p>експертиза</p>
                         </div>
                     </div>
-                    <li class="project-item">
-                      <img src="/img/Декларація_щодо_забезпечення_конфіденційності_інформації.jpg" alt="">
+                </li>
+                    <li class="project-item" id="gallery--getting-started">
+                      <a href="./img/Декларація_щодо_забезпечення_конфіденційності_інформації.jpg" 
+                      data-pswp-width="1669" 
+                      data-pswp-height="2500" 
+                     >
+                      <img src="./img/Декларація_щодо_забезпечення_конфіденційності_інформації.jpg" alt="" />
+                    </a>
                       <div class="project-info">
                           <div class="project-info-text">
                               <h3>Декларація щодо забезпечення конфіденційності інформації</h3>
@@ -132,8 +164,13 @@
                           </div>
                       </div>
                   </li>
-                <li class="project-item">
-                    <img src="/img/Скарги_та_аплеяції(процедура).jpg" alt="">
+                <li class="project-item" id="gallery--getting-started">
+                  <a href="./img/Скарги_та_аплеяції(процедура).jpg" 
+                  data-pswp-width="1669" 
+                  data-pswp-height="2500" 
+                 >
+                  <img src="./img/Скарги_та_аплеяції(процедура).jpg" alt="" />
+                </a>
                     <div class="project-info">
                         <div class="project-info-text">
                             <h3>Скарги та апеляції (процедура)</h3>
@@ -142,7 +179,7 @@
                     </div>
                 </li>
             </ul>
-         </div>
+         <!-- </div> -->
         </main>
         <footer>
             <img src="" alt="" class="header-image" />
@@ -222,5 +259,6 @@
           </footer>
     </div>
     <script src="/main.js"></script>
+    <script type="module" src="./gallery.js"></script>
 </body>
 </html>
