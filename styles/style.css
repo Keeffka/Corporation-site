@@ -18,8 +18,7 @@
 }
 
 .logo-container img {
-  width: 50px;
-  height: 30px;
+  width: 60px;
 }
 
 .side-bar-content {
@@ -161,7 +160,7 @@ header,
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 118px 25px;
 }
 
@@ -332,8 +331,8 @@ header,
 
 .features-list {
   display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
+  justify-content: center;
+  gap: 120px;
 }
 
 .feature-item {
@@ -454,13 +453,18 @@ header,
   position: relative;
   width: 305px;
   height: 400px;
+  cursor: pointer;
 }
 .services-post img {
   width: 305px;
   height: 400px;
+  transition: 0.3s;
   z-index: -1;
   position: absolute;
   filter: brightness(0.9);
+}
+.services-post:hover img {
+  filter: brightness(0.7);
 }
 
 .services-post-text {
@@ -521,13 +525,24 @@ footer nav {
   max-width: 300px;
 }
 
-.footer-phones {
+.footer-contacts {
   display: flex;
   gap: 60px;
 }
-.footer-phones li {
+.footer-contacts li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.footer-contacts img {
+  width: 25px;
+}
+
+.footer-contacts-email {
+  gap: 15px !important;
+}
+.footer-contacts-email p {
+  margin-top: -2px;
 }
 
 .footer-s-nav {
@@ -881,23 +896,22 @@ footer nav {
   margin-top: 0px;
 }
 
+.contacts-header .menu-item a {
+  color: black;
+}
+
 @media screen and (max-width: 1450px) {
   .projects {
     grid-template-columns: 1fr;
+  }
+  .features-list {
+    gap: 40px;
   }
   .services {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 1250px) {
-  .contact-form-wrapper {
-    padding-right: 100px;
-  }
-  .contact-section {
-    gap: 6vw;
-  }
-}
-@media screen and (max-width: 1100px) {
   .feature-item,
   .feature-content,
   .features-list {
@@ -905,6 +919,17 @@ footer nav {
     justify-content: center;
     align-items: center;
   }
+  .contact-form-wrapper {
+    padding-right: 100px;
+  }
+  .features-list {
+    gap: 40px;
+  }
+  .contact-section {
+    gap: 6vw;
+  }
+}
+@media screen and (max-width: 1100px) {
   .feature-title {
     text-align: center;
   }
@@ -991,10 +1016,12 @@ footer nav {
     padding-top: 25px;
     border-top: 1px solid #202020;
     margin-top: 25px;
-    justify-content: flex-end;
   }
   .footer-s-nav a {
     font-size: 15px;
+  }
+  .footer-contacts {
+    gap: 20px;
   }
   footer {
     padding-bottom: 40px;
@@ -1034,8 +1061,18 @@ footer nav {
   .side-bar {
     display: block;
   }
+  .footer-contacts {
+    flex-direction: column-reverse;
+  }
+  footer {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   .other-header-text {
     margin-bottom: 5vh !important;
+  }
+  .footer-s-nav a {
+    font-size: 14px;
   }
   .file-info {
     max-width: 100%;

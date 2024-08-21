@@ -22,8 +22,7 @@
 
 .logo-container {
   img {
-    width: 50px;
-    height: 30px;
+    width: 60px;
   }
 }
 
@@ -162,7 +161,7 @@ header,
 
 .about-section {
   @include flex-center;
-  align-items: flex-start;
+  align-items: center;
   padding: 118px 25px;
 }
 
@@ -303,8 +302,8 @@ header,
 
 .features-list {
   display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
+  justify-content: center;
+  gap: 120px;
 }
 
 .feature-item {
@@ -420,13 +419,22 @@ header,
   position: relative;
   width: 305px;
   height: 400px;
+  cursor: pointer;
+
 
   img {
     width: 305px;
     height: 400px;
+    transition: .3s;
     z-index: -1;
     position: absolute;
     filter: brightness(.9);
+  }
+
+  &:hover {
+    img {
+      filter: brightness(.7);
+    }
   }
 }
 
@@ -488,13 +496,24 @@ footer nav {
   }
 }
 
-.footer-phones {
+.footer-contacts {
   display: flex;
   gap: 60px;
   li {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
   }
+  img {
+    width: 25px;
+  }
+}
+
+.footer-contacts-email {
+ gap: 15px !important;
+ p {
+  margin-top: -2px;
+}
 }
 
 .footer-s-nav {
@@ -836,9 +855,19 @@ footer nav {
   }
 }
 
+.contacts-header {
+  .menu-item a {
+    color: black;
+  }
+}
+
 @media screen and (max-width: 1450px) {
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .features-list {
+    gap: 40px;
   }
 
   .services {
@@ -847,8 +876,20 @@ footer nav {
 }
 
 @media screen and (max-width: 1250px)  {
+  .feature-item,
+  .feature-content,
+  .features-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .contact-form-wrapper {
    padding-right: 100px;
+  }
+
+  .features-list {
+    gap: 40px;
   }
 
   .contact-section {
@@ -858,13 +899,6 @@ footer nav {
 
 
 @media screen and (max-width: 1100px) {
-  .feature-item,
-  .feature-content,
-  .features-list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .feature-title {
     text-align: center;
   }
@@ -972,10 +1006,14 @@ footer nav {
     padding-top: 25px;
     border-top: 1px solid #202020;
     margin-top: 25px;
-    justify-content: flex-end;
+    // justify-content: flex-end;
     a {
       font-size: 15px;
     }
+  }
+
+  .footer-contacts {
+    gap: 20px;
   }
 
   footer {
@@ -1028,8 +1066,22 @@ footer nav {
     display: block;
   }
 
+  .footer-contacts {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    // background: red !important;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .other-header-text {
     margin-bottom: 5vh !important;
+  }
+
+  .footer-s-nav a {
+    font-size: 14px;
   }
 
   .file-info {
