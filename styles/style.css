@@ -198,7 +198,7 @@ header,
 }
 
 .intro-text {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .about-section .read-more-btn {
@@ -354,8 +354,11 @@ header,
   font-size: 24px;
 }
 .feature-content p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
+}
+.feature-content p:nth-child(1) {
+  font-size: 17px;
 }
 
 .features-section {
@@ -578,6 +581,10 @@ footer nav {
   align-items: center;
 }
 
+.read-more-text {
+  font-size: 16px;
+}
+
 .project-item {
   max-width: 500px;
 }
@@ -663,6 +670,9 @@ footer nav {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+}
+.service-info p:nth-child(1) {
+  font-size: 17px;
 }
 .service-info div a {
   background: white;

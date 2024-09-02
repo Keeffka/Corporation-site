@@ -197,7 +197,7 @@ header,
 }
 
 .intro-text {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .about-section .read-more-btn {
@@ -324,8 +324,12 @@ header,
     font-size: 24px;
   }
   p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
+  }
+
+  p:nth-child(1) {
+    font-size: 17px;
   }
 }
 
@@ -545,6 +549,10 @@ footer nav {
   @include flex-center;
 }
 
+.read-more-text {
+  font-size: 16px;
+}
+
 .project-item {
   max-width: 500px;
   img {
@@ -631,6 +639,10 @@ footer nav {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
+  }
+
+  p:nth-child(1) {
+ font-size: 17px;
   }
 
   div {
