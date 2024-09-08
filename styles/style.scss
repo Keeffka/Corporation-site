@@ -409,10 +409,10 @@ header,
 }
 
 .services-posts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
+  li img:nth-child(1) {
+    height: 500px;
+    object-fit: cover
+  }
 }
 
 .services-list-container {
@@ -1104,6 +1104,14 @@ footer nav {
     padding-left: 25px;
     padding-right: 25px;
   }
+
+  .services-posts {
+    li img:nth-child(1) {
+      height: 400px;
+      object-fit: cover
+    }
+  }
+  
   
   // .other-header-text {
   //   margin-bottom: 5vh !important;
